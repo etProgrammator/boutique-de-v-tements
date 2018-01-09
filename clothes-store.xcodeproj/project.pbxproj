@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		F638861920051DB000EFA3EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F638861820051DB000EFA3EF /* AppDelegate.swift */; };
-		F638861B20051DB000EFA3EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F638861A20051DB000EFA3EF /* ViewController.swift */; };
 		F638861E20051DB000EFA3EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F638861C20051DB000EFA3EF /* Main.storyboard */; };
 		F638862020051DB000EFA3EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F638861F20051DB000EFA3EF /* Assets.xcassets */; };
 		F638862320051DB000EFA3EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F638862120051DB000EFA3EF /* LaunchScreen.storyboard */; };
+		F638862B2005200400EFA3EF /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F638862A2005200400EFA3EF /* CategoriesVC.swift */; };
+		F6388630200526F700EFA3EF /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F638862F200526F700EFA3EF /* CategoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F638861520051DB000EFA3EF /* clothes-store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "clothes-store.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F638861820051DB000EFA3EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F638861A20051DB000EFA3EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F638861D20051DB000EFA3EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F638861F20051DB000EFA3EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F638862220051DB000EFA3EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F638862420051DB000EFA3EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F638862A2005200400EFA3EF /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
+		F638862F200526F700EFA3EF /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,39 @@
 		F638861720051DB000EFA3EF /* clothes-store */ = {
 			isa = PBXGroup;
 			children = (
+				F638862E2005266E00EFA3EF /* View */,
+				F638862D2005266000EFA3EF /* Model */,
+				F638862C2005264A00EFA3EF /* Controller */,
 				F638861820051DB000EFA3EF /* AppDelegate.swift */,
-				F638861A20051DB000EFA3EF /* ViewController.swift */,
 				F638861C20051DB000EFA3EF /* Main.storyboard */,
 				F638861F20051DB000EFA3EF /* Assets.xcassets */,
 				F638862120051DB000EFA3EF /* LaunchScreen.storyboard */,
 				F638862420051DB000EFA3EF /* Info.plist */,
 			);
 			path = "clothes-store";
+			sourceTree = "<group>";
+		};
+		F638862C2005264A00EFA3EF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F638862A2005200400EFA3EF /* CategoriesVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F638862D2005266000EFA3EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F638862E2005266E00EFA3EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F638862F200526F700EFA3EF /* CategoryCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +163,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F638861B20051DB000EFA3EF /* ViewController.swift in Sources */,
+				F638862B2005200400EFA3EF /* CategoriesVC.swift in Sources */,
 				F638861920051DB000EFA3EF /* AppDelegate.swift in Sources */,
+				F6388630200526F700EFA3EF /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
