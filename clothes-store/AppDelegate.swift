@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  clothes-store
-//
-//  Created by Dan Mosley on 09/01/2018.
-//  Copyright © 2018 Comalyst. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
